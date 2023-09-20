@@ -1,0 +1,35 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: rgb(240, 219, 144);
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.divAgentFee {
+  color: red;
+}

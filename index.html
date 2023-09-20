@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Price</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <h2>Расчет рентабельности</h2>
+        <label for="cost">Стоимость программы: </label>
+        <input id="cost" type="number" placeholder="Введите стоимость" />
+        <br />
+        <label for="NumberOfPayments"
+          >Число платежей: <span id="selectedNumber">1</span>
+        </label>
+        <input
+          type="range"
+          id="NumberOfPayments"
+          min="1"
+          max="5"
+          step="1"
+          value="1"
+        />
+        <div id="inputFields"></div>
+      </div>
+
+      <div class="left">
+        <h2>Данные об агенте</h2>
+        <input type="radio" id="option1" name="options" value="1" />
+        <label for="1">Оплата сразу</label>
+        <br />
+        <input type="radio" id="option2" name="options" value="2" />
+        <label for="2">Разбить платежи равномерно оплатам от Клиента</label>
+        <br /><br />
+        <label for="agentCost">Комиссия агенту: </label>
+        <input id="agentCost" type="number" placeholder="Введите комиссию" />
+      </div>
+    </div>
+
+    <div class="right">
+      <button onclick="отобразитьВведенныеДанные()">Выполнить расчет</button>
+      <div id="filledData"></div>
+      <br />
+      <div id="AgentFee" class="divAgentFee"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
