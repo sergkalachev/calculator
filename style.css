@@ -11,16 +11,19 @@ p {
 
 .main {
   display: flex;
+  flex-direction:column;
   justify-content: space-between;
   align-items: center;
 }
 
 .left {
   flex: 1;
+  width: 20%;
   padding: 30px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   background-color: rgb(240, 219, 144);
+  margin-right:auto;
 }
 
 .right {
